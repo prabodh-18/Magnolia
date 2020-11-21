@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Century Gothic', Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.main-conatiner{
+    margin-top: 0px;
+}
+
+.landing-section{
+    height: 100vh;
+    background-color:#fff;
+    background:url('img/aaron-huber-G7sE2S4Lab4-unsplash.png');
+    background-size: cover;
+}
+
+.card{
+    height:50vh;
+    display:grid;
+    
+}
+
+.card:nth-child(odd)
+{
+    grid-template-columns:45% 55%;
+}
+
+.card:nth-child(even)
+{
+    grid-template-columns:55% 45%;
+}
+
+.left-card{   
+    background-color: #fff;  
+}
+
+.right-card{
+  
+    background-color:#ff9dab;
+}
+
+.title-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.title-card h2 {
+     width:100%;
+     text-align:center; 
+     border-bottom: 3px solid #fff; 
+     line-height:0.1em; margin:10px 0 20px; 
+     
+} 
+.title-card h2 span { background:#ff9dab; padding:0 10px; }
+
+
+.contact-conatiner{
+    background-color: #ff9dab;
+    height: 50vh;
+    text-align: center;
+    
+    .title-card h2 {
+        margin-bottom: 50px;
+        padding-top: 50px;
+        color: #fff;
+        width:100%;
+        text-align:center; 
+        border-bottom: 3px solid #fff; 
+        line-height:0.1em; margin:10px 0 20px; 
+        
+   } 
+   .title-card h2 span { background:#ff9dab; padding:0 10px; }
+
+   input{
+       height: 35px;
+       border:none;
+       width: 80%;
+       padding:10px;
+       font-size: 16px;
+       font-family: inherit;
+       margin-bottom: 10px;
+       border-radius: 5px;
+   }
+
+   textarea{
+        border:none;
+        width: 80%;
+        padding:10px;
+        font-size: 16px;
+        font-family: inherit;
+        border-radius: 5px;
+
+   }
+}
+
+.kitchen-card{
+    background-color: #ff9dab;
+    color:#fff;
+
+    .left-card{
+        background: url(img/christian-mackie-SxBca4GcC9k-unsplash.png);
+        background-size: contain;
+    }
+}
+
+.bathroom-card{
+    background-color: #949494;
+    color:#fff;
+
+    .right-card{
+  
+        background-color: #949494;
+        color:#fff;
+    }
+
+    .title-card h2 span { background-color: #949494; padding:0 10px; }
+
+    .left-card{
+        background: url(img/christian-mackie-SxBca4GcC9k-unsplash.png);
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width:768px)
+{
+    .card:nth-child(odd)
+    {
+        grid-template-columns:100%
+    }
+
+    .card:nth-child(even)
+    {
+        grid-template-columns:100%;
+    }
+}
